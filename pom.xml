@@ -12,7 +12,6 @@
 		<dropwizard.version>0.7.1</dropwizard.version>
 	</properties>
 
-
 	<dependencies>
 
 		<dependency>
@@ -33,6 +32,7 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
+		
 	</dependencies>
 
 	<repositories>
@@ -88,6 +88,8 @@
 					<debug>true</debug>
 				</configuration>
 			</plugin>
+			
 		</plugins>
+		
 	</build>
 </project>
