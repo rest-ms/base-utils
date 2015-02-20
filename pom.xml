@@ -10,6 +10,7 @@
 
     <properties>
     	<dropwizard.version>0.7.1</dropwizard.version>
+    	<atmosphere.version>2.2.3</atmosphere.version>
 		<javax.validation.version>1.1.0.Final</javax.validation.version>
 		<aws-maven.version>5.0.0.RELEASE</aws-maven.version>
     	<junit.version>4.11</junit.version>
@@ -19,6 +20,12 @@
     
 	<dependencies>
 
+		<dependency>
+			<groupId>org.atmosphere</groupId>
+			<artifactId>atmosphere-runtime</artifactId>
+			<version>${atmosphere.version}</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>io.dropwizard</groupId>
 			<artifactId>dropwizard-core</artifactId>
@@ -38,6 +45,11 @@
 			<scope>test</scope>
 		</dependency>
 		
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.7</version>
+		</dependency>
 	</dependencies>
 
 	<repositories>
@@ -70,7 +82,7 @@
 			<url>s3://s3-mvn-repo/snapshot</url>
 		</snapshotRepository>
 	</distributionManagement>
-	
+
 	<build>
 
 		<extensions>
